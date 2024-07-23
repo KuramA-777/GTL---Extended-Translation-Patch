@@ -1,0 +1,1143 @@
+{
+	autofocus_id: "62262C7C04B2D79A"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "606A554994C6B31D"
+	group: ""
+	icon: "gtceu:doge_coin"
+	id: "606A554994C6B31D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4B6F43302E963F5E"]
+			id: "328D140CCF4FAEC6"
+			tasks: [{
+				id: "60C942F096955819"
+				title: "ULV"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["59D7F512A30C4290"]
+			id: "6967496308DD29AE"
+			tasks: [{
+				id: "18257AB42CC12B94"
+				title: "LV"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["150F409313B13620"]
+			id: "1994BAD293E85984"
+			tasks: [{
+				id: "3F42209BF0C6D769"
+				title: "MV"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60C149F551ED9513"]
+			id: "231670C48BBDDB3E"
+			tasks: [{
+				id: "2D237EAD6E9F27AD"
+				title: "HV"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:bronze_ingot"
+			id: "5D8C36224EAD129C"
+			rewards: [{
+				id: "4DC28677F9AC9E9A"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "553843DFB9C60240"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Bronze"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:tin_alloy_ingot"
+			id: "6B108E774863DD83"
+			rewards: [{
+				id: "2CBC6E86DA9BE01E"
+				item: "gtceu:tin_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "79268F6FFDE91F4E"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Tin-Iron Alloy"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:steel_ingot"
+			id: "5D6D75D548EC9255"
+			rewards: [{
+				id: "62F22CD1F901F416"
+				item: "gtceu:steel_dust"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "1B53ED998CCC2A56"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Steel"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "minecraft:copper_ingot"
+			id: "6530A7F1F1EF9E0E"
+			rewards: [{
+				id: "0DF96DB36DB9D955"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "60B4803EC5801E17"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Copper"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:tin_ingot"
+			id: "3A495254105F39FE"
+			rewards: [{
+				id: "5DF9361E1EFE7DE1"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "0C2D92AE3CA26086"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Tin"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "minecraft:iron_ingot"
+			id: "41A03ABE176583A6"
+			rewards: [{
+				id: "6BCAF7F30F621F31"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "5704F1041F4BB99A"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "Iron"
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:sticky_resin"
+			id: "480654050D2AA365"
+			rewards: [{
+				id: "580D3A12A204DE87"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4BB789818AD0C432"
+				item: "gtceu:copper_credit"
+				type: "item"
+			}]
+			title: "resin"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "gtceu:lead_ingot"
+			id: "62262C7C04B2D79A"
+			rewards: [{
+				id: "3E89D22A6BE68246"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "73AA093941CE9684"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Lead"
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "gtceu:nickel_ingot"
+			id: "6105D12CA14D5AF1"
+			rewards: [{
+				id: "660DBC342535BB7C"
+				item: "gtceu:nickel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7ED0DA0B0E42417E"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Nickel"
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "gtceu:silver_ingot"
+			id: "4E524697DB6A4E38"
+			rewards: [{
+				id: "5F82508C865D553B"
+				item: "gtceu:silver_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "320801D5AF19FB9F"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Silver"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "minecraft:gold_ingot"
+			id: "7EDB453FBC4B7957"
+			rewards: [{
+				id: "6701A90D82E532A8"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "383EBDFB2377CECA"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Gold"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "gtceu:aluminium_ingot"
+			id: "28B1628F5D38BBE9"
+			rewards: [{
+				id: "7FC91ADFC7DF86CD"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "7B3FC9A01DC9CD02"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Aluminium"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "minecraft:redstone"
+			id: "14FE20F424D376CD"
+			rewards: [{
+				count: 4
+				id: "573C44E8F54B65BE"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4556D98DC0B40651"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Redstone"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6967496308DD29AE"]
+			icon: "gtceu:rubber_ingot"
+			id: "4FC06B3C5E4C3749"
+			rewards: [{
+				id: "2F6EF7DAF80887EA"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "319A39915A1DD57D"
+				item: "gtceu:cupronickel_credit"
+				type: "item"
+			}]
+			title: "Rubber"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "369BA1002418F097"
+			tasks: [{
+				id: "0E78B5C528062928"
+				item: "gtceu:ancient_gold_coin"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: [
+				"Use this magical bottle to sneak right-click on the working GT machine to speed up the machine's work."
+				"Of course, using such a powerful item will deplete your hunger bar, and the acceleration capability will decrease as the machine level increases."
+				"Can be synthesized into a blast furnace-specific type, which can be used to speed up electric blast furnaces and alloy smelting furnaces"
+				"mechanism:"
+				"Each use consumes 1 use point, and the use point recovers 1 per second, up to 10 times"
+				"Normal: From steam machines to HV machines, the machine level is 0-3, and it is invalid if it is higher than HV level."
+				"When the machine recipe running time is greater than 20 seconds, the time is reduced by (4-machine level) x 2 seconds"
+				"When the machine recipe running time is greater than 10 seconds, the time is reduced by (4-machine level) seconds"
+				"When the machine recipe running time is greater than 2 seconds, the time is reduced by (4-machine level) x 0.5 seconds"
+				"Earth blast furnace is fixed and reduced by 5 seconds"
+				"Specialized for blast furnaces: machines that can accelerate LuV and below"
+				"When the machine formula running time is greater than 40 seconds, the time is fixedly reduced by 8 seconds"
+				"When the machine formula running time is greater than 20 seconds, the time is fixedly reduced by 4 seconds"
+				"When the machine formula running time is greater than 10 seconds, the time is fixedly reduced by 2 seconds"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:time_twister"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "15A4420D900FEDE6"
+			rewards: [{
+				id: "7E56F698AF18B8AD"
+				item: {
+					Count: 1
+					id: "kubejs:time_twister"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "7614BE9438829BAD"
+					item: "gtceu:ancient_gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "17EC40E9CBE48A19"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+			]
+			title: "Time Bottle"
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: [
+				"Range Attack"
+				"Right click to fire beam"
+				"Right click while sneaking can gather drops within a 100 range"
+				"Gathers creatures specified by the perspective"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:infinity_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "59E9131BD015B4F5"
+			rewards: [{
+				id: "2053E626EF03D2F5"
+				item: {
+					Count: 1
+					id: "kubejs:infinity_sword"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:looting"
+							lvl: 10
+						}]
+						Unbreakable: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "676E9149C2A8F052"
+					item: "gtceu:ancient_gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "50CE45138A1C1A4F"
+					item: "gtceu:nano_saber"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: ["The casting method has been lost"]
+			icon: "gtceu:damascus_steel_ingot"
+			id: "0E0889E2DEB646B6"
+			rewards: [{
+				id: "0A188BADCDB23487"
+				item: "gtceu:damascus_steel_dust"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "1CF312748A61B7FA"
+					item: "gtceu:ancient_gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "20B4F144241E5936"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Damascus Steel"
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["369BA1002418F097"]
+			description: [
+				"With night vision and creative flight, the X key can speed up the flight, up to 4 times, sneak plus X can reset the flight speed, no energy required"
+				"Z key toggles night vision"
+				"Can be upgraded to a version that is resistant to any dangerous effects using Radioncide and chemical protection suits"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:fermium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "204D5882D7F5CF64"
+			rewards: [
+				{
+					id: "305DCBDAB0E551AA"
+					item: "kubejs:fermium_helmet"
+					type: "item"
+				}
+				{
+					id: "62D453E0BF5D0AC8"
+					item: "kubejs:fermium_chestplate"
+					type: "item"
+				}
+				{
+					id: "029A014B60FE9EB5"
+					item: "kubejs:fermium_leggings"
+					type: "item"
+				}
+				{
+					id: "60FEFE03527530DF"
+					item: "kubejs:fermium_boots"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5A9EDBF24F74FBA1"
+					item: "gtceu:ancient_gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "63DC036403653500"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "73BEC5DD61996102"
+					item: {
+						Count: 1
+						id: "gtceu:avanced_nanomuscle_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3877F50FFBF452F3"
+					item: "gtceu:nanomuscle_leggings"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "658AD98EDB918134"
+					item: "gtceu:nanomuscle_boots"
+					type: "item"
+				}
+			]
+			title: "Fei Suit"
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: ["Due to the needs of the game process, there are no drops"]
+			icon: {
+				Count: 1
+				id: "kubejs:bedrock_destroyer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A0E2C1B07649B81"
+			rewards: [{
+				id: "3B9623C406861996"
+				item: {
+					Count: 1
+					id: "kubejs:bedrock_destroyer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					consume_items: true
+					id: "0F4C4B667AF8CE53"
+					item: "gtceu:ancient_gold_coin"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "75A7EDCC81956650"
+					item: {
+						Count: 1
+						id: "gtceu:iv_diamond_drill"
+						tag: {
+							Charge: 2147483647L
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 4
+								AoELayer: 8
+								AoERow: 4
+								MaxAoEColumn: 4
+								MaxAoELayer: 8
+								MaxAoERow: 4
+							}
+							GT.Tool: {
+								Damage: 0
+								Enchantability: 18
+								HarvestLevel: 3
+								MaxDamage: 5375
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+							MaxCharge: 2147483647L
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bedrock Destruction"
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1994BAD293E85984"]
+			icon: "gtceu:silver_octal_cable"
+			id: "03F8B997EFEB4636"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BD7E35B07717A83"
+				table_id: 4226179630409097864L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2BB3325EC9BFD10F"
+				item: "gtceu:silver_credit"
+				type: "item"
+			}]
+			title: "MV-HV Cable"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1994BAD293E85984"]
+			icon: "gtceu:exquisite_ruby_gem"
+			id: "7CD3E38C1FC6D0DD"
+			rewards: [{
+				count: 4
+				id: "7A9FDC40E6FBF2DD"
+				item: "gtceu:ruby_dust"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "30A1D5242AEE33BE"
+				item: "gtceu:silver_credit"
+				type: "item"
+			}]
+			title: "Ruby"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1994BAD293E85984"]
+			icon: "gtceu:gallium_dust"
+			id: "6D8265D945F1A4FE"
+			rewards: [{
+				id: "64DFB1A234040D63"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "6D6E988574CD32D7"
+				item: "gtceu:silver_credit"
+				type: "item"
+			}]
+			title: "Gallium"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["231670C48BBDDB3E"]
+			icon: "gtceu:platinum_octal_cable"
+			id: "322DE662115CB052"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1CE47CF23D506908"
+				table_id: 3428454249082450316L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4645232EC7413F45"
+				item: "gtceu:gold_credit"
+				type: "item"
+			}]
+			title: "EV-IV Cables"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1994BAD293E85984"]
+			icon: "travelanchors:travel_staff"
+			id: "0A5739F8E482B47E"
+			rewards: [{
+				id: "0CCB7C8F1482C14A"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "travelanchors:teleportation"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "52FF263193A25CD4"
+					item: "gtceu:silver_credit"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0AC8562951E67700"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+			]
+			title: "Save a grid"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["231670C48BBDDB3E"]
+			icon: "gtceu:lv_super_tank"
+			id: "1C4B5EDEA37AF553"
+			rewards: [{
+				id: "12671ABB3E06CBB1"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "48690AFDFD92005B"
+				item: "gtceu:gold_credit"
+				type: "item"
+			}]
+			title: "Super Tank I"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["231670C48BBDDB3E"]
+			icon: "gtceu:lv_super_chest"
+			id: "12E723ABD388B0E3"
+			rewards: [{
+				id: "129CCFB180D0461B"
+				item: "gtceu:lv_super_chest"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "39FECE67ED51DEF2"
+				item: "gtceu:gold_credit"
+				type: "item"
+			}]
+			title: "Super Box I"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2ECB47CBE5DC6E49"]
+			id: "0F5FC80A063D12FE"
+			tasks: [{
+				id: "4AB433EFDF70990A"
+				title: "EV"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1994BAD293E85984"]
+			hide_dependency_lines: false
+			icon: "gtceu:steel_fluid_cell"
+			id: "15567706C963F777"
+			rewards: [{
+				id: "090167413FB053EB"
+				item: "gtceu:steel_fluid_cell"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "252E9AFB8369926E"
+				item: "gtceu:silver_credit"
+				type: "item"
+			}]
+			title: "Fluid Unit I"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["231670C48BBDDB3E"]
+			icon: "gtceu:aluminium_fluid_cell"
+			id: "5A3A66918A576FC9"
+			rewards: [{
+				id: "48FE5C4048BEC765"
+				item: "gtceu:aluminium_fluid_cell"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "5818744277411258"
+				item: "gtceu:gold_credit"
+				type: "item"
+			}]
+			title: "Fluid Unit II"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F5FC80A063D12FE"]
+			icon: "gtceu:mv_super_tank"
+			id: "15C89656703F9E75"
+			rewards: [{
+				id: "7C1206401F30BF82"
+				item: "gtceu:mv_super_tank"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7DA3AB4BF17BB925"
+				item: "gtceu:platinum_credit"
+				type: "item"
+			}]
+			title: "Super Tank II"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F5FC80A063D12FE"]
+			icon: "gtceu:mv_super_chest"
+			id: "6B5066DF5C58DBF7"
+			rewards: [{
+				id: "375A63BC6271866B"
+				item: "gtceu:mv_super_chest"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "13DCBD4DC03748A4"
+				item: "gtceu:platinum_credit"
+				type: "item"
+			}]
+			title: "Super Box II"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F5FC80A063D12FE"]
+			icon: "gtceu:stainless_steel_fluid_cell"
+			id: "30F2BC5FCEB33446"
+			rewards: [{
+				id: "03D0D6BF9403B5B1"
+				item: "gtceu:stainless_steel_fluid_cell"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "60B9D2D4D1C88727"
+				item: "gtceu:platinum_credit"
+				type: "item"
+			}]
+			title: "Fluid Unit III"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: ["Accurately obtain blocks"]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:silk_touch"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "78DAFF8A81A14F39"
+			rewards: [{
+				id: "71B78ED825255269"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					consume_items: true
+					id: "161537394D3FD0EE"
+					item: "gtceu:ancient_gold_coin"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7D8D34801734E71C"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Precision Collection"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: ["High-speed mining"]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 5s
+					}]
+				}
+			}
+			id: "531F00E7AB0E7B43"
+			rewards: [{
+				id: "262AF1D5E6E47558"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					consume_items: true
+					id: "6F89766A15CB7190"
+					item: "gtceu:ancient_gold_coin"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "48DB7034855D14AD"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Efficiency"
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["369BA1002418F097"]
+			description: [
+				"High-speed mining, by default, press J to adjust the speed, sneaking to increase the speed"
+				"Left click while sneaking can turn on and off magnetic attraction"
+				"Does not consume durability or power"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:echoite_vajra"
+				tag: {
+					Charge: 66666666L
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						Mode: 2b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						AttackDamage: 18.0f
+						AttackSpeed: 2.0f
+						Damage: 0
+						Enchantability: 10
+						HarvestLevel: 4
+						MaxDamage: 6665
+						ToolSpeed: 66.0f
+					}
+					HideFlags: 2
+					MaxCharge: 66666666L
+				}
+			}
+			id: "57097B0BBA1CF850"
+			rewards: [{
+				id: "29B2BA20507FECCF"
+				item: {
+					Count: 1
+					id: "gtceu:echoite_vajra"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							Mode: 2b
+							RelocateMinedBlocks: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							Enchantability: 10
+							HarvestLevel: 6
+							MaxDamage: 63
+							ToolSpeed: 10.0f
+						}
+						HideFlags: 2
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2297EC1FCD66F730"
+					item: "gtceu:ancient_gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "42461EFC486A5CFF"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "39113EFF1EFFE90E"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2033F767038F478C"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["328D140CCF4FAEC6"]
+			icon: "gtceu:steam_machine_casing"
+			id: "3E6BC2F76ED6F531"
+			rewards: [{
+				count: 10
+				id: "456F4E89948DB4FC"
+				item: "gtceu:steam_machine_casing"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "6DDAAF664EA230B3"
+					item: "gtceu:cupronickel_credit"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "25331A63468C189C"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "Steam Machinery Block"
+			x: 4.5d
+			y: -5.5d
+		}
+	]
+	title: "Small Market"
+}

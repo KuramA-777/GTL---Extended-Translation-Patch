@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1F2D08F4FEF1CEDC"
+	group: "24F4987B35ABEE82"
+	icon: "gtceu:lv_sodium_battery"
+	id: "1F2D08F4FEF1CEDC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The energy system in GregTech is not nearly as simple as the energy systems in other tech mods."
+				"GregTech's energy unit is EU, as opposed to FE used in other modules."
+				"The EU mechanics are not similar to real-world electricity."
+				"Power = Voltage x Current"
+				"Energy = Power x Time"
+				"Resistance is a concept that is excluded in GregTech, and is instead partially modeled as cable losses."
+				"GregTech is defined as follows:"
+				"- EU is a unit of energy."
+				"- EU/t is power."
+				"- A (ampere) is the electric current."
+				"- V (volts) is the voltage, called LV, MV, HV... in the game because these are the gameplay relevant values ​​(technically: LV = 32V = 32EU/t/A)."
+			]
+			icon: "gtceu:lv_battery_buffer_4x"
+			id: "7F97BED1B9552E5E"
+			tasks: [{
+				id: "7B797503EA800D59"
+				title: "Basic Settings"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"In GregTech, electricity is transmitted in \"packets\". The size of each packet is equal to its voltage level."
+				"Take the LV data pack as an example. This \"data pack\" will carry 32EU. Multiple blocks can generate these EU data packs, and data packs will only be generated when the destination is accessible."
+				"Every tick (1/20 of a second), EU\"packets\" attempt to transfer energy from producers to consumers."
+				"These \"packs\" have two parameters: the voltage level (V), which is determined by the rating of the producer, and the current (A), which determines how much power can actually be transferred."
+				"Energy will only be transferred if a full ampere \"pack\" can be received. You may notice that your machines are just below full EU capacity - they will only accept EU if they are missing at least 1A of input voltage."
+				""
+				"If a machine receives a voltage higher than its voltage rating, it will explode, but any excess current will have no adverse effect because the machine only consumes as much as it needs."
+				""
+				"Machine explosions would normally also destroy terrain, but that functionality has been disabled in this pack."
+				""
+				"In short, energy is transmitted in the form of \"packets\", which are 32EU for LV, 128EU for MV... and so on. Due to cable losses, the actual energy received by the machine may be lower than the energy sent."
+				""
+				"Machine power input is limited by voltage and current, so an MV machine connected to a LV line with an input current of 1A will never accept more than 32EU/t of power."
+				"It is still possible to run MV machines on LV lines, but only if the recipe power is low enough, or if you have a medium voltage battery in the machine's charge slot. The machine will only accept 1A when idle, so the battery will charge at the maximum rate of 32EU/t."
+			]
+			icon: "gtceu:lv_transformer_1a"
+			id: "0CC922B821305906"
+			tasks: [{
+				id: "34D8E6B118290930"
+				title: "Energy Transfer"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Transmitting EU is done through directly connected wires or cables."
+				"Wires are a poor choice because they can shock you and have high losses, so you need to use insulated wires."
+				"Line losses mean you have to place your machines close to your generators, but this will only be a problem early in the game."
+				"If you work through the mission statement, you will eventually be able to get superconductors and get around this problem."
+				"GregTech cable loss means that each EU packet transmitted by a cable block will reduce the EU stored in it."
+				"If the line loss of the tin cable is 1, for a 4-meter cable connected to a basic internal combustion engine, the voltage at the end is only 28EU/t, which is less than the 30EU/t of the power of a general LV machine. Therefore, the machine may trip after a few seconds while it is working."
+				"But there is no need to worry. There are cheap superconductors in the early stage and wireless in the later stage."
+			]
+			icon: "gtceu:tin_single_cable"
+			id: "4A7E19EF14D3C072"
+			tasks: [{
+				id: "6C551BD24A83AB3F"
+				title: "Cable Transmission"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"In GregTech, each Small Generator produces 1A of its voltage level."
+				"If a machine requires 32EU/t, a \"pack\" of 32EU will be sent every tick."
+				"A LV battery box with 4 cells can produce 4 LV amps (128EU/t)."
+				"Generic machines are configured to draw 2 amps, other machines have specific amp inputs which are described in their tooltips."
+				"Trying to deliver more amps than the limit will burn your cables."
+				"Ampere only draws from producers and consumers directly connected by cables, and only draws when the consumer is running."
+				"That means you can safely lower your cables in certain places."
+			]
+			icon: "gtceu:lv_diode"
+			id: "4F7A3702787F86A7"
+			tasks: [{
+				id: "007D09C6CE7CB00B"
+				title: "Electric Current"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Overclocking is a mechanism that occurs when you attempt to run a recipe in a machine with a higher rating than the recipe itself. The recipe will use more power, but the recipe time will be reduced based on the level you overclocked."
+				"The machine has a side menu to set the maximum voltage level it will overclock to, click it to cycle through all available voltages and select a limit."
+				"Each level above the recipe level allows one overclock. Each overclock means:"
+				"2x recipe speed"
+				"4x power consumption"
+				"2x total energy cost"
+				"But ULV recipes (even 2EU/t grinder recipes) won't overclock in LV machines, so they won't use LV power until MV (grinder recipes usually use 32EU/t until HV)."
+				"The default overclock quadruples the rated power and cuts the time in half. The power used is doubled, so this is a lossy overclock, and most machines use a lossy overclock."
+				"The corresponding concept is lossless overclocking, 4x formula speed, 4x power consumption."
+			]
+			icon: "minecraft:clock"
+			id: "5535934109A12B5D"
+			tasks: [{
+				id: "4DB7B7FC0312D572"
+				title: "Overclocking"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Of course, voltages can be converted between them using transformers. Normal, high current, high energy transformers can only convert between two adjacent voltage levels. They have both step-up and step-down modes. In step-up mode, a voltage and 4x current will be converted to a higher voltage and 1x current."
+				"There are four types of transformers: normal, high current, high energy, and step-down transformers. Normal transformers are 1A<-->4A, high current transformers are 4A<-->16A, and high energy transformers are 16A<-->64A."
+				"The multi-block machine active transformer unlocked in the ZPM stage can support the conversion between any voltage and any current, automatically step up/down the voltage, and can replace all ordinary transformers in the high voltage and high current environment in the middle and late stages."
+				"But the real use is to turn lasers."
+			]
+			icon: "gtceu:active_transformer"
+			id: "010CF028448C17A9"
+			tasks: [{
+				id: "311562AB006A065E"
+				title: "Voltage Transformation"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+	]
+	title: "Electricity"
+}

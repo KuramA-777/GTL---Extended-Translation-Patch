@@ -1,0 +1,130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "367D3E683D1387D0"
+	group: "24F4987B35ABEE82"
+	icon: "gtceu:lv_bender"
+	id: "367D3E683D1387D0"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"There are two very important factors to understand when building multi-block structures."
+				"Check JEI, and stay flexible."
+				"Use your mouse to rotate the preview, and hover over used blocks to see additional information."
+				"The JEI page also contains a list of ingredients for the required blocks. You can also right-click on a block in the preview to get a display of all blocks that can be used in that particular position."
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "089598D2954FFEE1"
+			tasks: [{
+				id: "0E513D8C801559EC"
+				title: "Multi-block structure forming"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"The maximum EU/t provided to a multiblock structure must be greater than the recipe's EU/t."
+				"Check for maintenance."
+				"Check the recipe for any special requirements it may have"
+				"Ensure items are entered into the bus/bin correctly."
+				"Make sure there is room for output."
+				"Maybe the multi-block structure is already formed, but you forgot one bin."
+			]
+			icon: "gtceu:maintenance_hatch"
+			id: "498CB29FA7447C46"
+			tasks: [{
+				id: "44CA2F43F475CFD9"
+				title: "Reasons for not working"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Electric Blast Furnaces smelt items at a certain temperature, which is mainly determined by the coil level used, and each voltage level starting from HV increases the temperature by 100K."
+				"What are the effects? Each Electric Blast Furnace recipe has a specific base temperature, for example, Aluminum melts at 1700K. If the temperature is not high enough, the recipe will not execute. If the temperature is high enough, the time taken will be reduced."
+			]
+			icon: "kubejs:uruium_coil_block"
+			id: "2205C5F410B9C4DB"
+			tasks: [{
+				id: "50F636D9BF4F6025"
+				title: "Coil"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Multiblock structures will now check if they have enough power before they start working."
+				"The power consumed by a multi-block is the sum of all energy cells."
+				"For example, Electricity requires at least 120 EU/t of power input to run its recipes, which can be achieved with two LV Energy Pods, each pod requires 2 amps of LV, so a total of 4 amps of LV is needed to reach the maximum of 128 EU/t of electricity."
+				"This allows for low voltage levels to process high voltage level recipes."
+			]
+			icon: "gtceu:lv_energy_input_hatch"
+			id: "0BADECF30AC0BAC4"
+			tasks: [{
+				id: "23E71635D04A5A77"
+				title: "Power Supply"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"This is key to multi-block structure input and output, and more advanced buses/silos will provide more space."
+				"The bus/storage also has automatic input and output functions, which can be controlled by switches."
+			]
+			icon: "gtceu:lv_input_bus"
+			id: "5DB8BE71B3733C36"
+			tasks: [{
+				id: "35761A42191E549C"
+				title: "Bus/Storage"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			description: ["When 16 LV machines are running at the same time, the power is equal to that of one HV machine, but the speed is four times that of one HV machine. This is because the 16 LV machines do not suffer the loss caused by lossy overclocking. As a result, it can do faster at a lower speed. The parallelism of multi-block structure is a similar concept. Simply put, parallelism is an alternative lossless overclocking."]
+			icon: "gtceu:iv_parallel_hatch"
+			id: "6F503441C24ABD5B"
+			tasks: [{
+				id: "6B1CC517916931AB"
+				title: "Parallel"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"The &7front&r should be obvious, the &9output side&r is the side with the dots or holes, by default this is the back side when you place the machine."
+				""
+				"Machines can &aauto-export&r via their output face. To enable auto-export, click the corresponding button in the GUI. Auto-export for fluids and items is toggled separately. Auto-export can be further controlled via &dOverlays&r."
+				""
+				"Use the &5Wrench&r-right-click on the machine to change the output side, and shift-right-click to change the front side."
+				""
+				"By default, items and fluids cannot be inserted through the output side, but this can be toggled using the &5Screwdriver&r, by right-clicking directly on the output face, or by shift-right-clicking on the mesh corresponding to the output side."
+				""
+				"There are some unique machines that don't process recipes, like the &3Pump&r, &3Miner&r, &3Fishing Machine&r, &3Item Collector&r, etc. These machines will have output on their &7front&r (still marked as dots)."
+			]
+			icon: "minecraft:hopper"
+			id: "2B1992E2158E63A2"
+			tasks: [{
+				id: "3A68620AD827B0E5"
+				title: "Logistics of machines"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+	]
+	title: "Machine"
+}
