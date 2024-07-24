@@ -4,7 +4,7 @@ event.add("kubejs:advanced_control_circuit", "§cLV level circuit")
 event.add("kubejs:elite_control_circuit", "§bMV-level circuit")
 event.add("kubejs:ultimate_control_circuit", "§5HV level circuit")
 event.add("kubejs:ultima_control_circuit", "§4EV level circuit")
-event.add("kubejs:warped_ender_pearl", "Right click to set personal teleport point, right click to teleport to the teleport point")
+event.add("kubejs:warped_ender_pearl", "Shift + right click to set personal teleport point, right click to teleport to the set point")
 event.add("kubejs:hyper_stable_self_healing_adhesive", "§7Selectively fully bond, effective even when torn or damaged")
 event.add("kubejs:black_body_naquadria_supersolid", "§7 Flows like liquid, does not reflect any electromagnetic waves, absorbs and transmits them perfectly")
 event.add("kubejs:stellar_containment_casing", "§7 Generates a force field that can protect against supernova explosions")
@@ -158,4 +158,14 @@ event.add(["gtceu:plasma_condenser",
 "gtceu:large_cracker",
 "gtceu:mega_alloy_blast_smelter",
 "gtceu:super_blast_smelter"], Text.keybind("gtceu.multiblock.parallelizable.tooltip"))
+event.addAdvanced('infinitycells:infinity_cell', (item, adv, text) => {
+    text.add(1, Text.red('WARNING: While this cell can contain an infinite amount of items and item types,'))
+    text.add(2, Text.red('It is highly not recommended you do this!'))
+    text.add(3, Text.red('This can lead to NBT overflow and potentially corrupt your entire save!'))
+})
+event.addAdvanced('infinitycells:infinity_fluidcell', (item, adv, text) => {
+    text.add(1, Text.red('WARNING: While this cell can contain an infinite amount of fluids and fluid types,'))
+    text.add(2, Text.red('It is highly not recommended you do this!'))
+    text.add(3, Text.red('This can lead to NBT overflow and potentially corrupt your entire save!'))
+})
 })

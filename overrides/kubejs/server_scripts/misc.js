@@ -134,7 +134,7 @@ BlockEvents.rightClicked(event => {
         let tt = event.player.persistentData.getInt("tt")
         event.player.persistentData.putInt("tt", tt - 1)
         if (tt > 0) {
-            event.player.setStatusMessage("Available times：" + (tt - 1))
+            event.player.setStatusMessage("Time contained: " + (tt - 1))
         } else {
             event.player.addItemCooldown(event.player.getHeldItem(event.hand), 20)
         }
@@ -416,12 +416,12 @@ PlayerEvents.tick(event => {
         let tti = event.player.getHeldItem("main_hand") == "kubejs:time_twister"
         if (tt > 20) {
             if (tti) {
-                event.player.setStatusMessage("Available times：" + 20)
+                event.player.setStatusMessage("Time contained: " + 20)
             }
         } else {
             event.player.persistentData.putInt("tt", tt + 1)
             if (tti) {
-                event.player.setStatusMessage("Available times：" + (tt + 1))
+                event.player.setStatusMessage("Time contained: " + (tt + 1))
             }
         }
     }
@@ -431,7 +431,7 @@ NetworkEvents.dataReceived("global.flyingspeedKey.consumeClick", (event) => {
     function flyspeed(max) {
         if (event.player.isSteppingCarefully()) {
             event.player.abilities.setFlyingSpeed(0.05)
-            event.player.setStatusMessage("飞行速度重置")
+            event.player.setStatusMessage("Reset flight speed")
             event.player.persistentData.putInt("fspeed", 1)
         } else {
             let speed = event.player.abilities.getFlyingSpeed()
@@ -439,9 +439,9 @@ NetworkEvents.dataReceived("global.flyingspeedKey.consumeClick", (event) => {
             if (speed < max) {
                 event.player.abilities.setFlyingSpeed(0.05 * speeda)
                 event.player.persistentData.putInt("fspeed", speeda + 1)
-                event.player.setStatusMessage(" flight speed x" + speeda)
+                event.player.setStatusMessage("Flight speed now x" + speeda)
             } else {
-                event.player.setStatusMessage(" Reach the limit ")
+                event.player.setStatusMessage("Max flight speed reached")
             }
         }
     }
@@ -480,18 +480,18 @@ NetworkEvents.dataReceived("global.pearlKey.consumeClick", event => {
         if (event.player.isSteppingCarefully()) {
             if (pearl == 0) {
                 event.player.persistentData.putInt("pearl", 10)
-                event.player.setStatusMessage("Coordinate slot：10")
+                event.player.setStatusMessage("Warp slot: 10")
             } else {
                 event.player.persistentData.putInt("pearl", pearl - 1)
-                event.player.setStatusMessage("Coordinate slot：" + (pearl - 1))
+                event.player.setStatusMessage("Warp slot: " + (pearl - 1))
             }
         } else {
             if (pearl == 10) {
                 event.player.persistentData.putInt("pearl", 0)
-                event.player.setStatusMessage("Coordinate slot：0")
+                event.player.setStatusMessage("Warp slot: 0")
             } else {
                 event.player.persistentData.putInt("pearl", pearl + 1)
-                event.player.setStatusMessage("Coordinate slot：" + (pearl + 1))
+                event.player.setStatusMessage("Warp slot: " + (pearl + 1))
             }
         }
     }
@@ -504,20 +504,20 @@ NetworkEvents.dataReceived("global.vajraKey.consumeClick", event => {
         let speed = item.getNbt().getCompound("GT.Tool").getFloat("ToolSpeed")
         if (speed < 100) {
             item.getNbt().getCompound("GT.Tool").putFloat("ToolSpeed", speed + value)
-            event.player.setStatusMessage("速度：" + (speed + value))
+            event.player.setStatusMessage("Mining speed: " + (speed + value))
         } else if (speed < 1000) {
             item.getNbt().getCompound("GT.Tool").putFloat("ToolSpeed", speed + value * 10)
-            event.player.setStatusMessage("速度：" + (speed + value * 10))
+            event.player.setStatusMessage("Mining speed: " + (speed + value * 10))
         } else {
             item.getNbt().getCompound("GT.Tool").putFloat("ToolSpeed", 10)
-            event.player.setStatusMessage("速度：10")
+            event.player.setStatusMessage("Mining speed: 10")
         }
     }
 })
 
 ItemEvents.firstLeftClicked("gtceu:echoite_vajra", event => {
     if (event.player.isSteppingCarefully() && !event.player.isMiningBlock()) {
-        event.item.getNbt().getCompound("GT.Behaviours").getByte("RelocateMinedBlocks") == 1 ? (event.item.getNbt().getCompound("GT.Behaviours").remove("RelocateMinedBlocks"), event.player.setStatusMessage("磁力吸引：关闭")) : (event.item.getNbt().getCompound("GT.Behaviours").putByte("RelocateMinedBlocks", 1), event.player.setStatusMessage("磁力吸引：打开"))
+        event.item.getNbt().getCompound("GT.Behaviours").getByte("RelocateMinedBlocks") == 1 ? (event.item.getNbt().getCompound("GT.Behaviours").remove("RelocateMinedBlocks"), event.player.setStatusMessage("Magnet: Off")) : (event.item.getNbt().getCompound("GT.Behaviours").putByte("RelocateMinedBlocks", 1), event.player.setStatusMessage("Magnet: On"))
     }
 })
 
