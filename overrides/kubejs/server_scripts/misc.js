@@ -284,10 +284,10 @@ BlockEvents.rightClicked("kubejs:reactor_core", event => {
                     event.server.runCommandSilent(`execute in minecraft:the_nether as ${event.player.getName().getString()} run tp ${0} ${128} ${0}`)
                     event.server.runCommandSilent(`execute in minecraft:the_nether run fill ${0} ${127} ${0} ${0} ${127} ${0} kubejs:reactor_core`)
                 } else {
-                    event.player.setStatusMessage(" Need handheld data ")
+                    event.player.setStatusMessage(" Needs Nether Data to work ")
                 }
             } else {
-                event.player.setStatusMessage(" Structure error ")
+                event.player.setStatusMessage(" Invalid Structure ")
             }
         }
     }
