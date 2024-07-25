@@ -35,12 +35,12 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.player.ItemTooltipEvent", e
     tiers.forEach((suprachronal) => {
         if (event.getItemStack().getId() == "kubejs:suprachronal_" + suprachronal) {
             addtooltip("Operating outside known space and time")
-            addwhite_bluetooltip(suprachronal.toUpperCase() + "level circuit")
+            addwhite_bluetooltip(suprachronal.toUpperCase() + "-Tier Circuit")
         }
     })
     tiers.slice(0, 12).forEach((magneto_resonatic) => {
         if (event.getItemStack().getId() == "kubejs:circuit_resonatic_" + magneto_resonatic) {
-            addtooltip("§d" + magneto_resonatic.toUpperCase() + "level circuit")
+            addtooltip("§d" + magneto_resonatic.toUpperCase() + "-Tier Circuit")
         }
     })
     switch (event.getItemStack().getId()) {
@@ -82,82 +82,82 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.player.ItemTooltipEvent", e
             break
         case "kubejs:supracausal_mainframe":
             addtooltip("The one who unites all things, the original miracle")
-            addfull_colortooltip("MAX level circuit")
+            addfull_colortooltip("MAX-Tier Circuit")
             break
         case "kubejs:supracausal_computer":
             addtooltip("Shadow beyond time")
-            addfull_colortooltip("OpV level circuit")
+            addfull_colortooltip("OpV-Tier Circuit")
             break
         case "kubejs:supracausal_assembly":
             addtooltip("Crossing the great barrier before the door of truth")
-            addfull_colortooltip("UXV level circuit")
+            addfull_colortooltip("UXV-Tier Circuit")
             break
         case "kubejs:supracausal_processor":
             addtooltip("The laws of the universe emerge here")
-            addfull_colortooltip("UIV level circuit")
+            addfull_colortooltip("UIV-Tier Circuit")
             break
         case "kubejs:cosmic_assembly":
             addtooltip("Turn the handle slightly")
-            adddark_purplish_redtooltip("UIV level circuit")
+            adddark_purplish_redtooltip("UIV-Tier Circuit")
             break
         case "kubejs:cosmic_computer":
             addtooltip("Small things whose density approaches a singularity")
-            adddark_purplish_redtooltip("UXV level circuit")
+            adddark_purplish_redtooltip("UXV-Tier Circuit")
             break
         case "kubejs:cosmic_mainframe":
             addtooltip("Simulate everything, analyze everything, understand everything")
-            adddark_purplish_redtooltip("OpV level circuit")
+            adddark_purplish_redtooltip("OpV-Tier Circuit")
             break
         case "kubejs:cosmic_processor":
             addtooltip("Holding the stars")
-            adddark_purplish_redtooltip("UEV level circuit")
+            adddark_purplish_redtooltip("UEV-Tier Circuit")
             break
         case "kubejs:exotic_assembly":
             addtooltip("Quantum Random Walk")
-            addpurplish_redtooltip("UEV level circuit")
+            addpurplish_redtooltip("UEV-Tier Circuit")
             break
         case "kubejs:exotic_computer":
             addtooltip("Control everything with spin")
-            addpurplish_redtooltip("UIV level circuit")
+            addpurplish_redtooltip("UIV-Tier Circuit")
             break
         case "kubejs:exotic_mainframe":
             addtooltip("Circuits from the future")
-            addpurplish_redtooltip("UXV level circuit")
+            addpurplish_redtooltip("UXV-Tier Circuit")
             break
         case "kubejs:exotic_processor":
             addtooltip("Super magnetic semiconductor circuit")
-            addpurplish_redtooltip("UHV level circuit")
+            addpurplish_redtooltip("UHV-Tier Circuit")
             break
         case "kubejs:optical_assembly":
             addtooltip("photon surge")
-            addgoldentooltip("UHV level circuit")
+            addgoldentooltip("UHV-Tier Circuit")
             break
         case "kubejs:optical_computer":
             addtooltip("Ultra-large-scale computing data support")
-            addgoldentooltip("UEV level circuit")
+            addgoldentooltip("UEV-Tier Circuit")
             break
         case "kubejs:optical_mainframe":
             addtooltip("The calculation speed is infinitely close to the speed of light")
-            addgoldentooltip("UIV level circuit")
+            addgoldentooltip("UIV-Tier Circuit")
             break
         case "kubejs:optical_processor":
             addtooltip("Ultra-efficient photoelectron transport")
-            addgoldentooltip("UV level circuit")
+            addgoldentooltip("UV-Tier Circuit")
             break
         case "kubejs:bioware_assembly":
             addtooltip("It seems like you can hear whispers")
-            adddark_greentooltip("UV level circuit")
+            adddark_greentooltip("UV-Tier Circuit")
             break
         case "kubejs:bioware_computer":
             addtooltip("The metal is covered with slime mold")
-            adddark_greentooltip("UHV level circuit")
+            adddark_greentooltip("UHV-Tier Circuit")
             break
         case "kubejs:bioware_mainframe":
             addtooltip("Microbiota Awareness Network")
-            adddark_greentooltip("UEV level circuit")
+            adddark_greentooltip("UEV-Tier Circuit")
             break
         case "kubejs:bioware_processor":
             addtooltip("A thick organic slurry adheres to the surface")
-            adddark_greentooltip("ZPM level circuit")
+            adddark_greentooltip("ZPM-Tier Circuit")
     }
 })

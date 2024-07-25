@@ -1,10 +1,10 @@
 ItemEvents.tooltip(event => {
-event.add("kubejs:basic_control_circuit", "§aULV level circuit")
-event.add("kubejs:advanced_control_circuit", "§cLV level circuit")
-event.add("kubejs:elite_control_circuit", "§bMV-level circuit")
-event.add("kubejs:ultimate_control_circuit", "§5HV level circuit")
-event.add("kubejs:ultima_control_circuit", "§4EV level circuit")
-event.add("kubejs:warped_ender_pearl", "Right click to set personal teleport point, right click to teleport to the teleport point")
+event.add("kubejs:basic_control_circuit", "§aULV-Tier Circuit")
+event.add("kubejs:advanced_control_circuit", "§cLV-Tier Circuit")
+event.add("kubejs:elite_control_circuit", "§bMV-Tier Circuit")
+event.add("kubejs:ultimate_control_circuit", "§5HV-Tier Circuit")
+event.add("kubejs:ultima_control_circuit", "§4EV-Tier Circuit")
+event.add("kubejs:warped_ender_pearl", "Shift + right click to set personal teleport point, right click to teleport to the set point")
 event.add("kubejs:hyper_stable_self_healing_adhesive", "§7Selectively fully bond, effective even when torn or damaged")
 event.add("kubejs:black_body_naquadria_supersolid", "§7 Flows like liquid, does not reflect any electromagnetic waves, absorbs and transmits them perfectly")
 event.add("kubejs:stellar_containment_casing", "§7 Generates a force field that can protect against supernova explosions")
@@ -53,24 +53,24 @@ event.add("gtceu:nano_forge_3", ["When processing 3rd order recipes, the number 
 event.add("ad_astra:oxygen_loader", "§cSynthesis only, cannot produce oxygen")
 event.add(["gtceu:dimensionally_transcendent_dirt_forge", "gtceu:dimensionally_transcendent_steam_oven"], ["has a maximum parallelism of 524288", "and completes the recipe directly"])
 event.add(["gtceu:large_chemical_plant", "gtceu:chemical_plant"], "Energy consumption is reduced by 5% for every coil level higher than white copper")
-event.add(["gtceu:processing_plant", "gtceu:assemble_plant", "gtceu:separated_plant", "gtceu:mixed_plant"], ["Energy consumption multiple x0.8", "Time consumption multiple x0.9", "Each mode requires a machine of corresponding voltage level to run", "For each LV higher than the voltage level, the maximum number of parallel operations increases by 4, with an upper limit of 16"])
+event.add(["gtceu:processing_plant", "gtceu:assemble_plant", "gtceu:separated_plant", "gtceu:mixed_plant"], ["Energy consumption multiplier x0.8", "Time consumption multiplier x0.9", "Each mode requires a machine of corresponding voltage level to run", "For each LV higher than the voltage level, the maximum number of parallel operations increases by 4, with an upper limit of 16"])
 event.add("gtceu:space_elevator", ["Up to 8 expansion modules can be installed", "Query JEI multi-block information to obtain module location"])
 event.add("gtceu:suprachronal_assembly_line_module", "Installed on both sides of the suprachronal assembly line")
 event.add("gtceu:suprachronal_assembly_line", ["§8§lInvisible Touch", "Modules can be expanded on both sides, and the modules and the host share the same parallel number", "Query JEI multi-block information to obtain module location"])
 event.add(["gtceu:suprachronal_assembly_line_module", "gtceu:suprachronal_assembly_line"], "Time-consuming multiplier x0.4")
 event.add("gtceu:hyper_reactor", ["Providing an additional 1mb of plasma before each run will gain 16 parallelism", "Different fuels require different plasma", "The order from 1-4 is:", "Orichalcum, Ender, Magic Gold, Metastable 𬭶"])
 event.add("gtceu:advanced_hyper_reactor", ["Provide different plasmas to obtain different parallelism", "Starlight: 8, Dense Neutron: 16"])
-event.add("gtceu:a_mass_fabricator", ["Energy consumption multiple x0.8", "Time consumption multiple x0.5"])
+event.add("gtceu:a_mass_fabricator", ["Energy consumption multiplier x0.8", "Time consumption multiplier x0.5"])
 event.add("gtceu:dimensionally_transcendent_mixer", "Add 1 extra second of progress per second when running a mixer recipe")
 event.add("gtceu:pcb_factory", ["Put in nanobee colony to get exemption", "You can use gold and vibranium, each increases the speed by 1%", "Vibranium can also reduce energy consumption by 4 times"])
 event.add("gtceu:space_probe_surface_reception", "Do not block")
-event.add(["gtceu:mega_alloy_blast_smelter", "gtceu:mega_blast_furnace"], "Time consumption multiple x0.8")
-event.add("gtceu:super_blast_smelter", "Time consumption multiple x0.2")
+event.add(["gtceu:mega_alloy_blast_smelter", "gtceu:mega_blast_furnace"], "Time consumption multiplier x0.8")
+event.add("gtceu:super_blast_smelter", "Time consumption multiplier x0.2")
 event.add("gtceu:dyson_sphere", ["Start working after launching the Dyson sphere module", "Each operation has a (number of modules/128 + 1)% chance of damaging a module", "When the damage reaches 100%, reduce the number of modules launched", "The production power is determined by the number of modules launched", "Each launch can increase the power by 536870912EU/t"])
 event.add("gtceu:bedrock_drilling_rig", ["Requires bedrock below the drill", "10% chance of destroying bedrock each time it runs"])
 event.add("gtceu:super_computation", ["Get computing power output according to different voltage levels", "Each computing power output requires a different circuit host", "When providing UIV-level voltage, you need to put in an optical processor host and provide 512CWU/t", "When providing UXV-level voltage, you need to put in a singular processor host and provide 1024CWU/t", "When providing OpV-level voltage, you need to put in a universal processor host and provide 2048CWU/t", "When providing MAX-level voltage, you need to put in a super causal processor host and provide 4096CWU/t"])
 event.add("gtceu:blaze_blast_furnace", ["Need to provide §b10x(power÷120)^1/2§r§eLiquid flame§r per second", "Time consumption multiplier x0.5", "Maximum number of parallel operations is fixed at 4"])
-event.add("gtceu:cold_ice_freezer", ["§b10x voltage level^2§r of §bliquid ice§r needs to be provided per second", "time consumption multiple x0.5", "maximum number of parallel operations is fixed to 4"])
+event.add("gtceu:cold_ice_freezer", ["§b10x voltage level^2§r of §bliquid ice§r needs to be provided per second", "time consumption multiplier x0.5", "maximum number of parallel operations is fixed to 4"])
 event.add("gtceu:annihilate_generator", ["Ultimate mass-energy conversion"])
 event.add("gtceu:sphere_of_harmony", ["Create a miniature universe and obtain the resources inside", "This multi-block machine requires too much EU to be powered by conventional means", "Directly supplied with EU by wireless EU network, specific values ​​can be viewed in GUI", "The circuit needs to be set up before working", "Execute special overclocking mode, every 16 times increase in power increases the speed by 2 times, overclocking is adjusted by the programmed circuit", "No. 1 does not perform overclocking, 2-4 perform 1, 2, and 3 overclocking respectively", "Startup requires 1024B of cosmic elements and 1024KB of hydrogen and helium", "Hydrogen and helium are stored inside the machine and will continue to be consumed before the machine is ready to work"])
 event.add("gtceu:integrated_ore_processor", ["Ore processing is completed in one step", "Circuit No. 1 is grinding-grinding-centrifugation", "Circuit No. 2 is grinding-washing-thermal separation-grinding", "Circuit No. 3 is grinding-washing-grinding-centrifugation", "Circuit No. 4 is grinding-washing-screening-centrifugation", "Circuit No. 5 is grinding-leaching-thermal separation-grinding", "Circuit No. 6 is grinding-leaching-grinding-centrifugation", "Circuit No. 7 is grinding-leaching-screening-centrifugation"])
@@ -158,4 +158,48 @@ event.add(["gtceu:plasma_condenser",
 "gtceu:large_cracker",
 "gtceu:mega_alloy_blast_smelter",
 "gtceu:super_blast_smelter"], Text.keybind("gtceu.multiblock.parallelizable.tooltip"))
+
+event.add(["gtceu:lv_steam_turbine", "gtceu:lv_combustion", "gtceu:lv_gas_turbine"], "Efficiency: 100% and §bOutput: 16A§r")
+event.add(["gtceu:mv_steam_turbine", "gtceu:mv_combustion", "gtceu:mv_gas_turbine"], "Efficiency: 90% and §bOutput: 8A§r")
+event.add(["gtceu:hv_steam_turbine", "gtceu:hv_combustion", "gtceu:hv_gas_turbine"], "Efficiency: 80% and §bOutput: 4A§r")
+event.add(["gtceu:ev_rocket_engine"], "Efficiency: 70% and §bOutput: 2A§r")
+event.add(["gtceu:iv_rocket_engine", "gtceu:iv_naquadah_reactor"], "Efficiency: 60% and §bOutput: 1A§r")
+event.add(["gtceu:luv_rocket_engine", "gtceu:iv_naquadah_reactor"], "Efficiency: 50% and §bOutput: 1A§r")
+event.add(["gtceu:zpm_naquadah_reactor"], "Efficiency: 40% and §bOutput: 1A§r")
+
+event.add(["gtceu:electric_blast_furnace"], "Processing Time multiplier = (Recipe Temp / EBF Coil Temp) max at x0.5 Multiplier")
+
+event.add(["gtceu:luv_fusion_reactor","gtceu:zpm_fusion_reactor", "gtceu:uv_fusion_reactor"], "For every level the Machine Recipe is above the Machine Level, maximum Parallelism increases by x4, up to a maximum of 16")
+
+event.add([
+	"gtceu:large_autoclave", 
+	"gtceu:large_material_press", 
+	"gtceu:large_brewer", 
+	"gtceu:large_cutter", 
+	"gtceu:large_distillery", 
+	"gtceu:large_extractor", 
+	"gtceu:large_extruder" , 
+	"gtceu:large_solidifier", 
+	"gtceu:large_wiremill", 
+	"gtceu:electric_implosion_compressor", 
+	"gtceu:mega_vacuum_freezer"], "Energy Consumption Multiplier x0.8  Time Consumption Multiplier x0.6")
+
+
+event.add(["gtceu:overworld_marker"], "§bOverworld")
+event.add(["gtceu:the_nether_marker"], "§bThe Nether")
+event.add(["gtceu:the_end_marker"], "§bThe End")
+event.add(["kubejs:reactor_core"], "§bAncient World")
+event.add(["ad_astra:moon_stone"], "§bMoon")
+event.add(["ad_astra:mars_stone"], "§bMars")
+event.add(["ad_astra:venus_stone"], "§bVenus")
+event.add(["ad_astra:mercury_stone"], "§bMercury")
+event.add(["kubejs:ceresstone"], "§bCeres")
+event.add(["kubejs:iostone"], "§bIo")
+event.add(["kubejs:ganymedestone"], "§bGanymede")
+event.add(["kubejs:plutostone"], "§bPluto")
+event.add(["kubejs:enceladusstone"], "§bEnceladus")
+event.add(["kubejs:titanstone"], "§bTitan")
+event.add(["ad_astra:glacio_stone"], "§bGlacio")
+event.add(["kubejs:barnarda_wood"], "§bBarnarda")
+
 })

@@ -864,7 +864,7 @@
 			id: "1BBA0428718C586A"
 			tasks: [{
 				id: "4B1E38412A6E2F9B"
-				title: "石油"
+				title: "Acquire Oil"
 				type: "checkmark"
 			}]
 			x: -11.5d

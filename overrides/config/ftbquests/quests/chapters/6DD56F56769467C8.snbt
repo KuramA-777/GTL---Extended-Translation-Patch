@@ -172,7 +172,7 @@
 		}
 		{
 			dependencies: ["46A03A08E1C2AC76"]
-			description: ["LV era main materials"]
+			description: ["LV Stage main Material"]
 			id: "7C722E54C642B3CF"
 			rewards: [{
 				id: "373DFDB157BF744E"
@@ -911,6 +911,7 @@
 		}
 		{
 			dependencies: ["76AB086FF41BB532"]
+			description: ["go to one of these Dimensions to get a few more ores you didnt have access to yet.  Also has a neat Reward!"]
 			id: "17F16F76AEF59A7F"
 			rewards: [
 				{
@@ -958,11 +959,21 @@
 					type: "item"
 				}
 			]
-			tasks: [{
-				dimension: "kubejs:ancient_world"
-				id: "7325EBE36B9980C8"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "kubejs:ancient_world"
+					id: "7325EBE36B9980C8"
+					optional_task: true
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "0DCD4DE61B897BCF"
+					optional_task: true
+					type: "dimension"
+				}
+			]
+			title: "Access One of these Dimensions"
 			x: 16.0d
 			y: 3.5d
 		}
@@ -972,8 +983,12 @@
 				"5E4026B7DBF07EB3"
 			]
 			description: [
-				"About the structure: put the core in the center, the adjacent 4 blocks are steel blocks, and the 4 corner blocks are diamond blocks, placed flat"
-				"Right click the core to go to the ancient world"
+				" "
+				"There are 2 Diffrent Portals you can make with this block. Both will give you access to New Ores"
+				""
+				"First one is for the Ancient World ->  Place the  Core  down and place 4 Steel Blocks adjecent in a Cross shape, then place 4 Diamond Blocks in the Corners to finish this 3x3 Structure."
+				""
+				"Second one is for the Regular Minecraft Nether ->  Place the  Core  down and place 4 Gold Blocks adjecent in a Cross shape, then place 4 Emerald Blocks in the Corners to finish this 3x3 Structure."
 			]
 			id: "76AB086FF41BB532"
 			rewards: [{
@@ -981,6 +996,7 @@
 				item: "gtceu:ancient_gold_coin"
 				type: "item"
 			}]
+			subtitle: " About this Structure"
 			tasks: [{
 				id: "791CCC5E3E168720"
 				item: "kubejs:reactor_core"
@@ -1010,6 +1026,18 @@
 					count: 4L
 					id: "7E581E8A3A9241D2"
 					item: "gtceu:steel_block"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2187D08E46448C8F"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "10767A6FB609D18B"
+					item: { Count: 4, id: "minecraft:emerald_block" }
 					type: "item"
 				}
 			]

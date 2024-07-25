@@ -59,6 +59,7 @@
 			icon: "gtceu:bronze_ingot"
 			id: "5D8C36224EAD129C"
 			rewards: [{
+				count: 16
 				id: "4DC28677F9AC9E9A"
 				item: "gtceu:bronze_ingot"
 				type: "item"
@@ -79,6 +80,7 @@
 			icon: "gtceu:tin_alloy_ingot"
 			id: "6B108E774863DD83"
 			rewards: [{
+				count: 16
 				id: "2CBC6E86DA9BE01E"
 				item: "gtceu:tin_alloy_ingot"
 				type: "item"
@@ -90,7 +92,7 @@
 				item: "gtceu:copper_credit"
 				type: "item"
 			}]
-			title: "Tin-Iron Alloy"
+			title: "Tin Alloy"
 			x: 0.0d
 			y: -5.5d
 		}
@@ -100,8 +102,9 @@
 			icon: "gtceu:steel_ingot"
 			id: "5D6D75D548EC9255"
 			rewards: [{
+				count: 16
 				id: "62F22CD1F901F416"
-				item: "gtceu:steel_dust"
+				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -121,6 +124,7 @@
 			icon: "minecraft:copper_ingot"
 			id: "6530A7F1F1EF9E0E"
 			rewards: [{
+				count: 16
 				id: "0DF96DB36DB9D955"
 				item: "minecraft:copper_ingot"
 				type: "item"
@@ -141,6 +145,7 @@
 			icon: "gtceu:tin_ingot"
 			id: "3A495254105F39FE"
 			rewards: [{
+				count: 16
 				id: "5DF9361E1EFE7DE1"
 				item: "gtceu:tin_ingot"
 				type: "item"
@@ -161,6 +166,7 @@
 			icon: "minecraft:iron_ingot"
 			id: "41A03ABE176583A6"
 			rewards: [{
+				count: 16
 				id: "6BCAF7F30F621F31"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -181,6 +187,7 @@
 			icon: "gtceu:sticky_resin"
 			id: "480654050D2AA365"
 			rewards: [{
+				count: 32
 				id: "580D3A12A204DE87"
 				item: "gtceu:sticky_resin"
 				type: "item"
@@ -191,7 +198,7 @@
 				item: "gtceu:copper_credit"
 				type: "item"
 			}]
-			title: "resin"
+			title: "Sticky Resin"
 			x: 3.0d
 			y: -5.5d
 		}
@@ -201,6 +208,7 @@
 			icon: "gtceu:lead_ingot"
 			id: "62262C7C04B2D79A"
 			rewards: [{
+				count: 16
 				id: "3E89D22A6BE68246"
 				item: "gtceu:lead_ingot"
 				type: "item"
@@ -221,6 +229,7 @@
 			icon: "gtceu:nickel_ingot"
 			id: "6105D12CA14D5AF1"
 			rewards: [{
+				count: 16
 				id: "660DBC342535BB7C"
 				item: "gtceu:nickel_ingot"
 				type: "item"
@@ -241,6 +250,7 @@
 			icon: "gtceu:silver_ingot"
 			id: "4E524697DB6A4E38"
 			rewards: [{
+				count: 16
 				id: "5F82508C865D553B"
 				item: "gtceu:silver_ingot"
 				type: "item"
@@ -262,6 +272,7 @@
 			icon: "minecraft:gold_ingot"
 			id: "7EDB453FBC4B7957"
 			rewards: [{
+				count: 16
 				id: "6701A90D82E532A8"
 				item: "minecraft:gold_ingot"
 				type: "item"
@@ -283,6 +294,7 @@
 			icon: "gtceu:aluminium_ingot"
 			id: "28B1628F5D38BBE9"
 			rewards: [{
+				count: 16
 				id: "7FC91ADFC7DF86CD"
 				item: "gtceu:aluminium_dust"
 				type: "item"
@@ -304,7 +316,7 @@
 			icon: "minecraft:redstone"
 			id: "14FE20F424D376CD"
 			rewards: [{
-				count: 4
+				count: 64
 				id: "573C44E8F54B65BE"
 				item: "minecraft:redstone"
 				type: "item"
@@ -325,6 +337,7 @@
 			icon: "gtceu:rubber_ingot"
 			id: "4FC06B3C5E4C3749"
 			rewards: [{
+				count: 16
 				id: "2F6EF7DAF80887EA"
 				item: "gtceu:rubber_ingot"
 				type: "item"
@@ -353,7 +366,7 @@
 			can_repeat: true
 			dependencies: ["369BA1002418F097"]
 			description: [
-				"Use this magical bottle to sneak right-click on the working GT machine to speed up the machine's work."
+				"This magical bottle can speed up any block by sneak right clicking it"
 				"Of course, using such a powerful item will deplete your hunger bar, and the acceleration capability will decrease as the machine level increases."
 				"Can be synthesized into a blast furnace-specific type, which can be used to speed up electric blast furnaces and alloy smelting furnaces"
 				"mechanism:"
@@ -401,7 +414,7 @@
 					type: "item"
 				}
 			]
-			title: "Time Bottle"
+			title: "Time in a Bottle"
 			x: -6.0d
 			y: -7.0d
 		}
@@ -659,7 +672,7 @@
 			icon: "gtceu:exquisite_ruby_gem"
 			id: "7CD3E38C1FC6D0DD"
 			rewards: [{
-				count: 4
+				count: 32
 				id: "7A9FDC40E6FBF2DD"
 				item: "gtceu:ruby_dust"
 				type: "item"
@@ -680,6 +693,7 @@
 			icon: "gtceu:gallium_dust"
 			id: "6D8265D945F1A4FE"
 			rewards: [{
+				count: 16
 				id: "64DFB1A234040D63"
 				item: "gtceu:gallium_dust"
 				type: "item"
@@ -1134,7 +1148,7 @@
 					type: "item"
 				}
 			]
-			title: "Steam Machinery Block"
+			title: "Steam Machine Casing"
 			x: 4.5d
 			y: -5.5d
 		}

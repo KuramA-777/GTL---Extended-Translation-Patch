@@ -188,7 +188,8 @@
 			id: "73C70C42B7EF5D4F"
 			tasks: [{
 				id: "1E7062E4355C5661"
-				item: "gtceu:america_ingot"
+				item: "gtceu:americium_ingot"
+				title: "Acquire Americium "
 				type: "item"
 			}]
 			x: -2.0d

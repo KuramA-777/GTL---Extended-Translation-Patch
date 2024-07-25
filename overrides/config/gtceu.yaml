@@ -43,7 +43,7 @@ recipes:
   hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
-  hardGlassRecipes: true
+  hardGlassRecipes: false
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true

@@ -14,8 +14,7 @@
 				"4F864738509B6DCA"
 				"4536535E8DA71D5B"
 			]
-			description: ["You need to browse the side quests before starting."]
-			hide_dependency_lines: true
+			description: [""]
 			icon: "minecraft:grass_block"
 			id: "075D368E91231337"
 			rewards: [{
@@ -47,18 +46,21 @@
 				title: "Start"
 				type: "checkmark"
 			}]
+			title: "The Beginning"
 			x: -6.5d
 			y: -2.5d
 		}
 		{
 			description: [
-				"M opens the map by default, and T can teleport to the location pointed by the mouse"
-				"You can claim and load blocks in the upper left corner of the interface"
-				"Press and hold the ~ key to enable chaining"
-				"Default TAB key to quickly open tasks"
-				"For more detailed tips, please refer to the "
-				"Tips"
-				" section"
+				"Press M to open the minimap, and press T anywhere on the map to teleport to where your cursor is."
+				""
+				"You can claim and load chunks by pressing the FTB Chunks icon in the top left of the inventory screen."
+				""
+				"Press and hold the ~ key while mining to veinmine blocks."
+				""
+				"Press the TAB key to open the questbook."
+				""
+				"For more detailed tips, refer to the Tips section of the questbook."
 			]
 			icon: "ftbquests:book"
 			id: "4F864738509B6DCA"
@@ -72,16 +74,19 @@
 				title: "Other Tips"
 				type: "checkmark"
 			}]
+			title: "Tips and Keybinds"
 			x: -6.5d
 			y: -4.5d
 		}
 		{
 			description: [
-				"This quest contains some important information for the gameplay."
-				"This set of quests is designed to guide you through the major milestones of GregTech progression."
-				"Recommended for playing in Peaceful mode, as hostile mobs offer little benefit."
-				"Feel free to use the map to teleport as you see fit."
-				"Most importantly, GregTech will have very complex recipes, and you need to be proficient in using JEI first."
+				"This questbook is designed to guide you through GregTech's progression and its major milestones."
+				""
+				"Peaceful mode is recommended for playing!"
+				""
+				"Feel free to use Xaero's Minimap to teleport anywhere as you see fit."
+				""
+				"Most importantly, GregTech has very complex recipes, so you will need to know your way around using JEI!"
 			]
 			icon: "minecraft:command_block_minecart"
 			id: "25A6B2F421327892"
@@ -90,16 +95,20 @@
 				title: "Before Playing"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: -6.5d
+			y: -0.5d
 		}
 		{
 			description: [
-				"This integration package modifies some of the early stages and reduces the difficulty."
-				"Adjusted some of GregTech's configuration to make it simpler."
-				"Added new ways to generate electricity, reducing energy difficulties."
-				"In the mid-to-late game, as resources become abundant and game understanding improves, you will gradually return to the difficulty of GregTech."
-				"Expanding to the MAX stage completes the GregTech technology line."
+				"This modpack has heavily modified the earlygame and reduces the difficulty significantly."
+				""
+				"GregTech itself has been configured and adjusted to make things way easier."
+				""
+				"New methods of power generation have been added to choose from."
+				""
+				"However, GregTech's intended difficulty will be more prevalent in the mid-to-lategame, once resources become abundant and your understanding of the mod improves."
+				""
+				"Achieving MAX Voltage is the endgame and completes the pack."
 			]
 			icon: "minecraft:structure_void"
 			id: "4536535E8DA71D5B"
@@ -108,14 +117,18 @@
 				title: "About Content"
 				type: "checkmark"
 			}]
+			title: "About this pack"
 			x: -8.5d
-			y: -4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["075D368E91231337"]
 			description: [
-				"There's no need to explain how to get this."
-				"This quest will give you a prospector. You can switch modes by right-clicking in stealth mode. The fluid mode is not yet useful."
+				"Come on, you know how to make a crafting table"
+				""
+				"This quest will give you an ore prospector on completion. You can switch its modes by right-clicking while sneaking! "
+				""
+				"&6Note: Fluid prospecting has not been implemented yet&r"
 			]
 			id: "77DF4A561164B530"
 			rewards: [{
@@ -134,12 +147,13 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
+			title: "Crafting and Prospecting"
 			x: -4.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["77DF4A561164B530"]
-			description: ["Stone Age"]
+			description: ["The Stone Age. Get digging!"]
 			icon: "minecraft:cobblestone"
 			id: "2DC6C5D7DDA578F7"
 			rewards: [{
@@ -170,13 +184,13 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			title: "Get Cobblestone"
+			title: "Cobblestone"
 			x: -2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2DC6C5D7DDA578F7"]
-			description: ["Blast furnace is faster"]
+			description: ["Blast furnaces smelt ores twice as fast as a normal furnace, but be warned: they also use fuel twice as fast!"]
 			id: "0EA3AAE338C0FE7A"
 			rewards: [{
 				count: 8
@@ -189,13 +203,18 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
+			title: "Smelting vs Blasting"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["77DF4A561164B530"]
-			description: ["You don't have to worry about the darkness anymore"]
+			description: [
+				"Tired of the darkness? Complete this quest to get infinite night vision!"
+				""
+				"&o&7This quest is infinitely repeatable&r&r"
+			]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -207,7 +226,7 @@
 			id: "525ED642C7A365D1"
 			optional: true
 			rewards: [{
-				command: "/effect give @p minecraft:night_vision 100000 0 true"
+				command: "/effect give @p minecraft:night_vision infinite 1 true"
 				elevate_perms: true
 				exclude_from_claim_all: true
 				id: "08BEFC60D3DA3529"
@@ -218,14 +237,19 @@
 				title: "Gaining Night Vision"
 				type: "checkmark"
 			}]
+			title: "Free Night Vision!"
 			x: -4.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["77DF4A561164B530"]
 			description: [
-				"Obsidian can go to the void world, and crying obsidian can go to the super flat world. The X and Z coordinates of the transmission are the main world coordinates x100"
-				"GT's solar equipment doesn't work here"
+				"Right clicking obsidian with an empty hand takes you to an empty void world"
+				"Right clicking crying obsidian with an empty hand takes you to an empty superflat world"
+				""
+				"1 block in either of these worlds are equal to 100 blocks in the Overworld!"
+				""
+				"Note: GregTech's solar panels don't work in these worlds"
 			]
 			icon: "minecraft:obsidian"
 			id: "07AC1B02299EF734"
@@ -261,12 +285,18 @@
 				id: "2FB6F5ECEC5CFC30"
 				type: "checkmark"
 			}]
+			title: "Void Worlds"
 			x: -4.5d
 			y: -1.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["07AC1B02299EF734"]
+			description: [
+				"Need some materials to build your new base?"
+				""
+				"&7&oThis quest is infinitely repeatable&r&r"
+			]
 			icon: "minecraft:white_concrete"
 			id: "3223AEF42BD9327C"
 			optional: true
@@ -286,7 +316,11 @@
 		}
 		{
 			dependencies: ["050FD340224F7AB6"]
-			description: ["Enter the Iron Age"]
+			description: [
+				"Copper, tin, and iron are going to be needed in copious amounts at this stage of the game. Make sure to stock up on them in stacks!"
+				""
+				"This quest also gives you a portable ME item cell. This can be used like a backpack to store items, as long as it has power"
+			]
 			icon: "minecraft:iron_ingot"
 			id: "2C6F506ADD78F277"
 			rewards: [{
@@ -317,15 +351,16 @@
 					type: "item"
 				}
 			]
-			title: "Collecting Minerals"
+			title: "The Material Grind"
 			x: 1.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2C6F506ADD78F277"]
 			description: [
-				"Most items in GT require tools when synthesized on a workbench"
-				"The hammer's secondary function is to mute the machine by right clicking &9&l"
+				"Most GregTech items require additional tools to craft"
+				""
+				"A lot of these have secondary functions. For example, the hammer can &9&lmuffle machine noises&r&r on right clicking them"
 			]
 			icon: {
 				Count: 1
@@ -425,6 +460,7 @@
 			]
 			tasks: [
 				{
+					consume_items: true
 					id: "2CBE8FF328FE35AC"
 					item: {
 						Count: 1
@@ -442,9 +478,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "75B26C1A65DF3848"
 					item: {
 						Count: 1
@@ -460,9 +498,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "6D4A489A3578B8B0"
 					item: {
 						Count: 1
@@ -478,16 +518,21 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 			]
-			title: "Production Tools"
+			title: "Crafting Tools"
 			x: 3.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6A7BE998C2EC882D"]
-			description: ["Grind into powder using a mortar and pestle and stir with your hands"]
+			description: [
+				"Ingots can be ground into dust by crafting them with a mortar pestle"
+				""
+				"You'll find yourself doing this a lot in the earlygame (especially to craft bronze), so keep a few mortars handy!"
+			]
 			id: "133BC85B5D3EF1CB"
 			rewards: [{
 				id: "0DA275C860355A9D"
@@ -496,22 +541,23 @@
 			}]
 			tasks: [
 				{
-					id: "327FF4C13FFEC8B6"
+					id: "7065F40991E2DD63"
 					item: "gtceu:copper_dust"
 					type: "item"
 				}
 				{
-					id: "788C88B4C8AD93FC"
+					id: "0AB970EC3CE91D43"
 					item: "gtceu:tin_dust"
 					type: "item"
 				}
 			]
+			title: "Grinding Materials (to Dust!)"
 			x: 5.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["133BC85B5D3EF1CB"]
-			description: ["Main material of the Steam Age"]
+			description: ["Bronze is the main material used in the Steam Age, so be ready to craft more at a moments notice!"]
 			id: "4B6F43302E963F5E"
 			rewards: [{
 				id: "45521EDF902431C8"
@@ -524,12 +570,18 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
+			title: "Bronze"
 			x: 7.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2C6F506ADD78F277"]
-			description: ["Wrought iron is a low-carbon iron alloy with better properties than iron"]
+			description: [
+				"Wrought iron is a low-carbon iron alloy with better tool properties "
+				""
+				"It will also be used to make a lot of items in the earlygame!"
+			]
+			icon: "gtceu:wrought_iron_ingot"
 			id: "52A0EE026A3D3A79"
 			rewards: [{
 				id: "11FB0702EB3F7E18"
@@ -554,7 +606,11 @@
 		}
 		{
 			dependencies: ["52A0EE026A3D3A79"]
-			description: ["Right click while sneaking can automatically build multi-block structures"]
+			description: [
+				"The terminal can be used to autobuild multiblocks."
+				""
+				"Right click a multiblock controller while sneaking to build it (as long as you have the materials)"
+			]
 			id: "4AB25C15F0B05AA0"
 			optional: true
 			rewards: [{
@@ -567,14 +623,20 @@
 				item: "gtceu:terminal"
 				type: "item"
 			}]
+			title: "Autobuilding Multiblocks"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["4AB25C15F0B05AA0"]
 			description: [
-				"If you don't like using commands or minimaps"
-				"The default Y key can switch slots"
+				"The Warped Ender Pearl can hold upto 10 positions to teleport to"
+				""
+				"- Right clicking will warp the player to the position in that warp slot"
+				""
+				"- Shift right clicking will set a new position to warp to in the defined warp slot"
+				""
+				"- Warp slots can be cycled by pressing Y while holding it"
 			]
 			icon: "kubejs:warped_ender_pearl"
 			id: "72AFAC66A9EC5F1A"
@@ -588,12 +650,14 @@
 				title: "Transporter"
 				type: "checkmark"
 			}]
+			title: "Warps"
 			x: 1.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["2C6F506ADD78F277"]
-			description: ["Go to the small market to exchange treasures"]
+			description: ["Ancient Gold Coins can be earned from certain quests, or obtained by fishing or from loot chests. These can be traded in for powerful items in the Small Market"]
+			icon: "gtceu:ancient_gold_coin"
 			id: "2E6B876A85B30554"
 			rewards: [{
 				id: "4C4D7911A44B42C2"
@@ -627,13 +691,17 @@
 					type: "item"
 				}
 			]
-			title: "More Mines"
+			title: "Ancient Gold Coins"
 			x: 0.8d
 			y: -4.0d
 		}
 		{
 			dependencies: ["2C6F506ADD78F277"]
-			description: ["Use anvil to upgrade"]
+			description: [
+				"The Tool Belt can hold a lot of, well, tools"
+				""
+				"You can increase the number of tool slots available (upto a maximum of 9) by combining it with a belt pouch in an anvil"
+			]
 			id: "0A047A198C30D7FD"
 			optional: true
 			rewards: [
@@ -658,7 +726,11 @@
 		}
 		{
 			dependencies: ["050FD340224F7AB6"]
-			description: ["Here the crude coal can be used directly as fuel"]
+			description: [
+				"Raw coal can be directly used as a fuel in this modpack. "
+				""
+				"However, smelting it refines it into two coal pieces which do twice the burntime compared to one raw coal!"
+			]
 			id: "4C943E88E3926A9A"
 			rewards: [{
 				id: "3C50340F6A70A194"
@@ -676,9 +748,11 @@
 		{
 			dependencies: ["6A7BE998C2EC882D"]
 			description: [
-				"Right-clicking with a wrench will &9&lset the port of the GT machine&r, while right-clicking with sneak will &9&lrotate the machine&r, and can also be used to destroy the machine instead of a pickaxe."
-				"A screwdriver can &9&lopen the machine cover"
-				"Wire cutters can &9&lconnect cables"
+				"Right-clicking with a wrench will &9&lset the input/output port of themachine&r, while sneak right-clicking will &9&lrotate the machine&r. Wrenches can also be used to break the machine."
+				""
+				"A screwdriver can &9&lopen the machine's cover&r. Using it on the side with an I/O port will &9&ltoggle auto input/output&r&r"
+				""
+				"Wire cutters are used to &9&lconnect cables"
 			]
 			id: "1F663A6C2DD1DB60"
 			rewards: [
@@ -821,6 +895,7 @@
 			]
 			tasks: [
 				{
+					consume_items: true
 					id: "23148C33657FFC60"
 					item: {
 						Count: 1
@@ -838,9 +913,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "512E4BCCAB2B9D22"
 					item: {
 						Count: 1
@@ -856,9 +933,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "488D299ED5C3EADF"
 					item: {
 						Count: 1
@@ -876,9 +955,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "52AE2ABE91E6D909"
 					item: {
 						Count: 1
@@ -896,9 +977,11 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "67B43C5CC46DE41B"
 					item: {
 						Count: 1
@@ -916,6 +999,7 @@
 							HideFlags: 2
 						}
 					}
+					match_nbt: false
 					type: "item"
 				}
 			]
@@ -926,8 +1010,10 @@
 		{
 			dependencies: ["1F663A6C2DD1DB60"]
 			description: [
-				"To produce creosote, you can press the U key on the coke oven item (main block) to jump to the JEI page to view the multi-block structure"
-				"Please go to the Tips page &b&lMulti-block section of the Machine chapter&r for details"
+				"The Coke Oven is needed to make creosote oil, charcoal, and coke (doubles the burntime of coal). You can view all the recipes in JEI"
+				"  "
+				""
+				"[ \"The Machines chapter explains multiblock mechanics in more depth \", { \"text\": \"here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"089598D2954FFEE1\" } } ]"
 			]
 			icon: "gtceu:coke_oven"
 			id: "12E605EC5CFDE71A"
@@ -956,7 +1042,7 @@
 		}
 		{
 			dependencies: ["4B6F43302E963F5E"]
-			description: ["With bronze, you can start making all kinds of steam-driven machines"]
+			description: ["The Steam Age begins here!  With bronze available to you now, you can start making all sorts of steam-powered machines!"]
 			icon: "gtceu:lp_steam_alloy_smelter"
 			id: "46F82A0A3D57C225"
 			rewards: [{
@@ -971,12 +1057,13 @@
 				title: "The Age of Steam"
 				type: "checkmark"
 			}]
+			title: "The Steam Age"
 			x: 9.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["12E605EC5CFDE71A"]
-			description: ["Equivalent to a coke oven main block without a GUI, which can be interacted with using pipes or hoppers"]
+			description: ["A Coke Oven Hatch can output items and fluids from the oven. This is incredibly useful for automating charcoal/creosote!"]
 			id: "4E01FAE893654321"
 			rewards: [{
 				id: "21D31A1CAA1B89AD"
@@ -993,7 +1080,11 @@
 		}
 		{
 			dependencies: ["050FD340224F7AB6"]
-			description: ["GTM now has a dangerous item setting. If you come into contact with poisonous items for too long, you will be poisoned."]
+			description: [
+				"GregTech Modern now has hazardous materials. If you come into contact with them for too long, you will receive various debuffs such as poisoning. "
+				""
+				"Wearing a hazardous materials suit while handling these will make you immune to any debuffs"
+			]
 			icon: "gtceu:radioactive_hazard_sign_block"
 			id: "4FF1DD54D99286CE"
 			rewards: [
@@ -1047,16 +1138,21 @@
 				title: "Why am I poisoned?"
 				type: "checkmark"
 			}]
+			title: "Hazard Warning!"
 			x: -0.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["2DC6C5D7DDA578F7"]
 			description: [
-				"GregTech ores are generated in veins, each with its own specific ore."
-				"JEI can view the information of mineral vein generation."
-				"For more information about the specific mineral veins, please visit the Ore Generation section."
-				"Chain can mine all ores."
+				"GregTech ores generate in large ore veins, each with its own specific ores"
+				""
+				"You can view these veins in JEI (click on raw ores to see what veins they spawn in)"
+				"You can also view what dimensions and height these veins spawn at in JEI"
+				""
+				"For more information about  specific mineral veins, visit the Ore Generation chapter"
+				""
+				"&6Tip: Veinmining can mine all ores in a vein at once!&r"
 			]
 			id: "050FD340224F7AB6"
 			rewards: [{
@@ -1075,7 +1171,13 @@
 		}
 		{
 			dependencies: ["2DC6C5D7DDA578F7"]
-			description: ["These are the plants you need to collect"]
+			description: [
+				"Get your hands on some sugarcane and rubber saplings ASAP!"
+				""
+				"Sugarcane is required to craft paper, which will needed soon enough to craft resistors as well as other things"
+				""
+				"Rubber trees drop sticky resin which is also needed for resistors, as well as rubber itself"
+			]
 			id: "79D4AD9908A4578A"
 			rewards: [{
 				id: "2284459A885572C5"
@@ -1094,11 +1196,13 @@
 					type: "item"
 				}
 			]
+			title: "The Farming Life"
 			x: -2.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["4B6F43302E963F5E"]
+			description: ["Useful if you need to store a large amount of items, upto 63 types for items and 18 for fluids!"]
 			icon: "kubejs:infinite_cell_component"
 			id: "7198356C944E053A"
 			rewards: [
@@ -1141,10 +1245,10 @@
 					type: "item"
 				}
 			]
-			title: "Super Storage"
+			title: "Super Storage!"
 			x: 7.5d
 			y: -1.0d
 		}
 	]
-	title: "Starting from here"
+	title: "The Beginning"
 }

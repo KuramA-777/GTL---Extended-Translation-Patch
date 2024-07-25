@@ -1337,22 +1337,19 @@
 			y: 6.0d
 		}
 		{
-			description: ["T7星球"]
+			description: ["T7 Planet"]
 			id: "43612FDF66B1CEB6"
 			tasks: [{
 				dimension: "ad_astra:ice"
 				id: "1BD372C4DA5C4D6E"
 				type: "dimension"
 			}]
-			title: "Shimohara Star"
+			title: "Glacio "
 			x: 12.5d
 			y: 6.0d
 		}
 		{
-			description: [
-				"You can go to the netherworld now."
-				"Use the Ancient Reactor Core and place an Emerald Block in the corner adjacent to a Gold Block"
-			]
+			description: ["You can get the Nether Data now for later use in some recipes, so dont forget to make one!"]
 			id: "51C280A0A27F4DAC"
 			tasks: [
 				{
@@ -1400,7 +1397,7 @@
 			y: 7.5d
 		}
 		{
-			description: ["The secondary handheld data can be used to install the Eye of Ender on the frame"]
+			description: ["You can acquire the End Data on this Planet now required for some Machines Recipes"]
 			id: "5EB9A45638074C39"
 			tasks: [{
 				id: "34CA7AA6562150CD"
@@ -1419,6 +1416,18 @@
 			}]
 			x: 12.5d
 			y: 7.5d
+		}
+		{
+			description: ["T8 Planet"]
+			id: "1819297CCE195F7D"
+			tasks: [{
+				dimension: "kubejs:barnarda"
+				id: "219377163A8F76DA"
+				title: "Barnarda"
+				type: "dimension"
+			}]
+			x: 14.0d
+			y: 6.0d
 		}
 	]
 	title: "Ore Generation"

@@ -1,5 +1,5 @@
 
-This is the Extended "Translation" Patch Version for the Modpack called GTL -> https://github.com/nutant233/GregTech-Leisure -> https://www.mcmod.cn/modpack/769.html -> id advise to "download" the pack via the github and get that up working as an instance in Prism or whichever Launcher of your choosing and then apply this Patch afterwards.
+This is the Extended "Translation" Patch Version for the Modpack called GTL -> https://github.com/nutant233/GregTech-Leisure -> https://www.mcmod.cn/modpack/769.html -> id advise to "download" the pack via the mcmod website, you can use website translation to find the 123.cloudstorage link and somehow download the GregTech Leisure-1.3.1.7.zip file --- otherwise here is a link i found for a google drive download for the version we base our patches on -> https://drive.google.com/file/d/1G6M0eVKTRAx_Pzixe0peMwXmoCitNYKi/view 
 
 I mostly just added mods that i felt were missing, like a few qol and building related ones, 2 for terrain gen like Tectonica and also ofc Create. If you have Troubles with JEI/EMI disable EMI first and see if its better then, the mod can be a bit jank at times.
 

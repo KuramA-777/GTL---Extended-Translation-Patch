@@ -775,6 +775,32 @@
 			x: -2.5d
 			y: 4.5d
 		}
+		{
+			dependencies: ["64802F81DE231743"]
+			description: [
+				""
+				"Best Mining Tool you can make, has lots of Upgrades you can put in it to either Mine 3x3 or up to 7x7 and have Silk Touch,  Magnet and more"
+			]
+			id: "0ADA019BDBDE5EE8"
+			rewards: [{
+				id: "7EDBC8D2F951F625"
+				item: "gtceu:gold_credit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EF2423AD169D512"
+				item: {
+					Count: 1
+					id: "mininggadgets:mininggadget"
+					tag: {
+						battery_tier: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.0d
+		}
 	]
 	subtitle: ["Tier2-MV"]
 	title: "Medium Voltage"

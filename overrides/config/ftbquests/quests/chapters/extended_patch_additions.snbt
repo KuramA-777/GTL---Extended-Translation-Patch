@@ -1,0 +1,427 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extended_patch_additions"
+	group: ""
+	icon: {
+		Count: 1
+		id: "mininggadgets:mininggadget"
+		tag: {
+			battery_tier: 0
+			energy: 1000000
+		}
+	}
+	id: "4AFA473E9A6D1B08"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				""
+				"Around this Quest are a bunch of  Mods we added to make this pack feel more complete, and espacially help fulfill your Building Needs, with the occasional QoL"
+				""
+				"Feel Free to look around and see if something of them is helpful to you!"
+			]
+			icon: "ftbquests:book"
+			id: "788F91BBA4AB9A92"
+			tasks: [{
+				id: "4E7C8A50FDAF77A6"
+				title: "Check"
+				type: "checkmark"
+			}]
+			title: "We added a few Mods"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				""
+				"We added Engineers Decor for Building, the rest the mod offers is quickly irrelevant."
+			]
+			id: "43C9A1E41869EFDA"
+			tasks: [{
+				id: "6897B82C1DE94AF6"
+				item: "engineersdecor:slag_brick_block"
+				type: "item"
+			}]
+			title: "Engineers Decor"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added a Builders Staple Mod, Chisel Reborn and the Factory Blocks addon"
+			]
+			id: "43C7ECEE2CB1D9A7"
+			tasks: [
+				{
+					id: "2AD0537470391DE8"
+					item: "chisel:chisel"
+					type: "item"
+				}
+				{
+					id: "23A4A29974C615EC"
+					item: "factory_blocks:factory"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				""
+				""
+				"We added Sophisticated  Storage and Backpacks to Help with Earlygame Storage and Later on the hoarding needs for on the Go"
+			]
+			id: "73E04CB86C619379"
+			tasks: [
+				{
+					id: "048AB55B150040C1"
+					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "6FB4CE206094A33A"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "Sophisticated Hoarding of Things"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				"Here we added MoreRed for all your more advanced Redstone needs"
+			]
+			id: "3832F58206EBBFC9"
+			tasks: [{
+				id: "2F47C98205B72CCA"
+				item: "morered:red_alloy_wire"
+				type: "item"
+			}]
+			title: "MoreRed"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				"Here we added CC:Tweaked and also included the Gregified scripts and Resourcepack"
+				""
+				"can be useful for all sorts of automating things and monitoring so definitely Google is your Friend on this one!  ... sorry :("
+			]
+			id: "508AC6E29E256CAE"
+			tasks: [{
+				id: "37DBF06E987B3DBD"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			title: "CC:Tweaked"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added Xtones Reworked, has lots of fancy Building Blocks but sadly no connected Texture support"
+			]
+			id: "455A27512A990DA1"
+			tasks: [
+				{
+					id: "07E4DFC4AE21B0C6"
+					item: "xtonesreworked:xtone_tile"
+					type: "item"
+				}
+				{
+					id: "330BF58EBF647994"
+					item: "xtonesreworked:korp_block_5"
+					type: "item"
+				}
+				{
+					id: "2E65D8C07CD5F0C7"
+					item: "xtonesreworked:lave_block_0"
+					type: "item"
+				}
+			]
+			title: "Xtones"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Here are some more AE2 QoL Mods"
+			]
+			id: "570DF5AAFF29E521"
+			tasks: [
+				{
+					id: "6E713FC1A4DE8BE2"
+					item: "ae2insertexportcard:insert_card"
+					type: "item"
+				}
+				{
+					id: "280AF473531D4FCB"
+					item: "ae2insertexportcard:export_card"
+					type: "item"
+				}
+				{
+					id: "667BCD3B73D002B1"
+					item: "aeinfinitybooster:infinity_card"
+					type: "item"
+				}
+				{
+					id: "25339D4753DE0D5D"
+					item: "packagedauto:recipe_holder"
+					type: "item"
+				}
+			]
+			title: "AE2 QoL "
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Seemingly no Modern Minecraft Modpack feels complete without Create, love it or hate it,  but it adds too many mechanics and fun Earlygame things to miss out on"
+			]
+			id: "3BCF01265A1946CF"
+			tasks: [{
+				id: "6973D29F45155666"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			title: "Create"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				""
+				"Here we added Create Deco, with lots of Factory inspired Building Blocks"
+			]
+			id: "13E3A7D0A6C6CFBD"
+			tasks: [{
+				id: "52BD6289F591572E"
+				item: "createdeco:industrial_iron_window"
+				type: "item"
+			}]
+			title: "Create Deco"
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Framed Blocks are great as a substitute Block with diffrent shapes to fit wichever Block Texture you want!"
+			]
+			id: "27C8C012AE333F08"
+			tasks: [
+				{
+					id: "3E5C10F2ECA4099B"
+					item: "framedblocks:framed_cube"
+					type: "item"
+				}
+				{
+					id: "29D50CBB0AAB87CB"
+					item: "framedblocks:framed_slope"
+					type: "item"
+				}
+			]
+			title: "Framed Blocks"
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Trash Cans Mod shouldnt be missed in a GT Modpack"
+			]
+			id: "1C9AB6DFE8CB278B"
+			tasks: [{
+				id: "2D64FA172EF08D52"
+				item: "trashcans:item_trash_can"
+				type: "item"
+			}]
+			title: "Trash Cans"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Antiblocks Mod for our Neon Builders, they should work with Shaders"
+			]
+			id: "4C9E4F024380E45C"
+			tasks: [{
+				id: "71A08D5C02379567"
+				item: "antiblocksrechiseled:bright_cyan"
+				type: "item"
+			}]
+			title: "Anti Blocks"
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Crafting Station from Tinkers as a solo Mod, can see adjecent Inventorys and use them for crafting! "
+			]
+			id: "16963A75B64543D8"
+			tasks: [{
+				id: "24A6268D03A05CFF"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				""
+				""
+				"We added a bunch of QoL Mods like  so be sure to check for Hotkey conflicts and their Configs and adjust them to your liking"
+				""
+				" "
+				"Controlling"
+				"Zume"
+				"AutoTools"
+				"Stackrefill"
+				"Pandas Falling Trees "
+				"EMI"
+				"Trash Slot for the Inventory"
+				"Patchouli"
+				"Xaero Worldmap and Minimap"
+				"Catalogue and Configured"
+				"Additional Placements"
+				"FPS Reducer"
+			]
+			id: "47C5EC5799BA1E69"
+			tasks: [{
+				id: "7DA6D4A552FAE1BB"
+				title: "Check"
+				type: "checkmark"
+			}]
+			title: "Most QoLs"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added Simply Lights, everyone needs more Lights to fit their Homes and Factory Setups"
+			]
+			id: "4B762A32421FB23C"
+			tasks: [{
+				id: "43C8634D995FEAAF"
+				item: "simplylight:wall_lamp"
+				type: "item"
+			}]
+			title: "Simply Light"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added Assorted Decor, this mods adds a bunch of random Decor related Blocks and Items, even something that is pretty similar to Framed Blocks so be sure to pick one and stick with that, else it will get messy :P"
+			]
+			id: "0FF96B0CA7FD1FC0"
+			tasks: [{
+				id: "6CC1D2BDE4E8A2A4"
+				item: "assorteddecor:roadway"
+				type: "item"
+			}]
+			title: "Assorted Decor"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				""
+				""
+				"You dont wanna miss out on this!   Waystones is a must have and make traveling between all those Dimensions and large Distances manageable"
+			]
+			id: "7F3F636CF771C376"
+			tasks: [{
+				id: "35055BA70EFC9CFE"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added DawnOfTimeBuilder, Theme wise it wont fit much with Gregtech but its a great Deco/Builder Mod, maybe you like it regardless!"
+			]
+			id: "06ED1F258C3607D5"
+			tasks: [
+				{
+					id: "5544B49A1CA530D2"
+					item: "dawnoftimebuilder:stone_bricks_faucet"
+					type: "item"
+				}
+				{
+					id: "7C2B124F63A3F097"
+					item: "dawnoftimebuilder:stone_bricks_fireplace"
+					type: "item"
+				}
+				{
+					id: "2EA020ECC077DE53"
+					item: "dawnoftimebuilder:spruce_beam"
+					type: "item"
+				}
+			]
+			title: "DawnOfTimeBuilder"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Building But Better is yet another Deco/Builder Mod we added, it needs its own Hammer alot to change blocks. "
+				""
+				"Theme wise its not the best fit with Gregtech but maybe you still like it!"
+			]
+			id: "125DE1363C4CD4C6"
+			tasks: [
+				{
+					id: "2A48542F21A8AF58"
+					item: {
+						Count: 1
+						id: "bbb:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "670E6CCABCE4CBFE"
+					item: "bbb:deepslate_column"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.5d
+		}
+	]
+	title: "Extended Patch Additions"
+}
