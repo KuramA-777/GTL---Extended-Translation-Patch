@@ -69,13 +69,13 @@
 		}
 		{
 			dependencies: ["0ABAFF5BA123B0B6"]
-			description: ["AE2 here has no channel restrictions, so the controller is disabled"]
+			description: ["AE2 here has a bigger Channels config, aka All channel capacities are doubled (16 on normal cable, 64 on dense cable, ad-hoc networks support 16 channels)"]
 			icon: "ae2:controller"
 			id: "6E2CDCAA9BE93465"
 			tasks: [{
-				id: "37BFB8E929DC6AEE"
-				title: "Other Tips"
-				type: "checkmark"
+				id: "2AB933EE7780F094"
+				item: "ae2:controller"
+				type: "item"
 			}]
 			x: -2.5d
 			y: -3.0d

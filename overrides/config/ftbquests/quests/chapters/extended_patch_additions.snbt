@@ -306,6 +306,9 @@
 				"Catalogue and Configured"
 				"Additional Placements"
 				"FPS Reducer"
+				"Dark Mode Everywhere"
+				"Easier Sleeping"
+				"Spark"
 			]
 			id: "47C5EC5799BA1E69"
 			tasks: [{
@@ -315,21 +318,28 @@
 			}]
 			title: "Most QoLs"
 			x: 1.0d
-			y: 0.5d
+			y: -4.0d
 		}
 		{
 			description: [
 				""
 				""
-				"Here we added Simply Lights, everyone needs more Lights to fit their Homes and Factory Setups"
+				"Here we added Simply Lights and Searchlight Mod, everyone needs more Lights to fit their Homes and Factory Setups"
 			]
 			id: "4B762A32421FB23C"
-			tasks: [{
-				id: "43C8634D995FEAAF"
-				item: "simplylight:wall_lamp"
-				type: "item"
-			}]
-			title: "Simply Light"
+			tasks: [
+				{
+					id: "43C8634D995FEAAF"
+					item: "simplylight:wall_lamp"
+					type: "item"
+				}
+				{
+					id: "6A6F0DE3046D1330"
+					item: "searchlight:searchlight"
+					type: "item"
+				}
+			]
+			title: "Let there be Light"
 			x: -3.5d
 			y: -1.0d
 		}
@@ -419,8 +429,109 @@
 					type: "item"
 				}
 			]
+			title: "Bulding But Better"
 			x: 5.5d
 			y: 0.5d
+		}
+		{
+			description: [
+				""
+				""
+				"Added RGB Blocks, which allows you to make diffrent types of blocks and paint them  to one of 16million+ colors"
+			]
+			id: "0C7C9FFA6AF5B646"
+			tasks: [
+				{
+					id: "0D6EBFAFA8C4B0BF"
+					item: {
+						Count: 1
+						id: "rgbblocks:concrete"
+						tag: {
+							color: -1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05CD3134FBC97D79"
+					item: {
+						Count: 1
+						id: "rgbblocks:paint_bucket"
+						tag: {
+							Damage: 0
+							color: -1
+							isRGBSelected: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added Blocks you Need (yes thats the name) which adds some rly great factory and modern looking blocks and other stuff, be aware tho it has world gen stuff required to make these blocks"
+			]
+			id: "0E82535250AF7C12"
+			tasks: [
+				{
+					id: "445D2BF95B0D23D9"
+					item: "blocksyouneed_luna:labrat_antipanel"
+					type: "item"
+				}
+				{
+					id: "1DBBC71C3565591D"
+					item: "blocksyouneed_luna:labrat_antipanel_tiles_duotone"
+					type: "item"
+				}
+				{
+					id: "5B589D14103E42DF"
+					item: "blocksyouneed_luna:labrat_panel"
+					type: "item"
+				}
+				{
+					id: "7444EE6EAB2CDAA3"
+					item: "blocksyouneed_luna:labrat_panel_tiles_duotone"
+					type: "item"
+				}
+			]
+			title: "BlocksYouNeed"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				""
+				"Here we added Macaws Doors, bit bloaty but it adds the very cool Garage Door and some other Modern Looking Doors"
+			]
+			id: "3FF3A4548D618453"
+			tasks: [{
+				id: "0252AB6152705BFB"
+				item: "mcwdoors:garage_white_door"
+				type: "item"
+			}]
+			title: "Macaws Doors"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				""
+				""
+				"Here we added Connected Glass, adds a bunch of Glass Blocks and Panes that have connected Textures and even have Clear versions"
+			]
+			id: "089E9206851FA827"
+			tasks: [{
+				id: "7BEC49D1E00975C5"
+				item: "connectedglass:clear_glass"
+				type: "item"
+			}]
+			title: "Connected Glass"
+			x: 4.0d
+			y: 2.0d
 		}
 	]
 	title: "Extended Patch Additions"
